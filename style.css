@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 1.125rem;
+    background-color: hsl(226, 43%, 10%);
+}
+
+#profile-card{
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-info{
+    padding: 1rem;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 8px;
+    color: white;
+    z-index: 1;
+}
+
+#profile-info > img{
+    width: 45px;
+    height: 50px;
+    border-radius: 100%;
+    border: solid 2px white;  
+}
+
+h1{
+    color: rgb(255, 255, 255, .5);
+    font-size: .75rem;
+    font-weight: 300;
+    margin-bottom: .3rem;
+}
+
+#profile-info > #users-name > p{
+    font-weight: 300;
+}
+
+#time-period{
+    position: relative;
+    bottom: .5rem;
+    z-index: 0;
+    background-color: hsl(235, 46%, 20%);
+    padding: 1.5rem 1rem .5rem 1rem;
+    color: hsl(236, 100%, 87%);
+    border-radius: 0 0 8px 8px;  
+}
+
+#time-period > p{
+    width: fit-content;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+#time-period > p:hover{
+    color: white;
+}
+
+#info-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.card-header > img{
+    width: 40px;
+    height: 40px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: white;
+    background-color: hsl(235, 46%, 20%);
+    position: relative;
+    bottom: .5rem;
+    border-radius: 8px;
+}
+
+.card-content:hover{
+    cursor: pointer;
+    background-color: hsl(236, 41%, 34%)
+}
+
+.card-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-info > p{
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.card-info > img{
+    cursor: pointer;
+    width: 15px;
+}
+
+.card-numbers > .hours{
+    font-weight: 300;
+}
+
+.card-numbers > .remain-info{
+    font-size: .8rem;
+    color: hsl(236, 100%, 87%);
+}
+
+.work-header{
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play-header{
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study-header{
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise-header{
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social-header{
+    background-color: hsl(264, 64%, 52%);
+}
+
+.self-care-header{
+    background-color: hsl(43, 84%, 65%);
+}
+
+.selected-time-frame{
+    color: white;
+}
+
+@media(min-width: 700px){
+    #content{
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 0 0 1rem;
+    }
+
+    #profile-card{
+        margin-right: 1rem;
+    }
+
+    #profile-info{
+        height: 260px;
+        width: 180px;
+    }
+
+    #profile-info > img{
+        margin-bottom: 1rem;  
+    }
+
+    #profile-info > #users-name > p{
+        font-size: 2rem;
+    }
+
+    #time-period{
+        width: 180px;
+    }
+
+    .line-of-cards{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card{
+        width: 165px; 
+        margin: 0 1rem .8rem 0;
+    }
+
+    .card-header > img{
+        margin-left: 70%
+    }
+
+    .card-content{
+        height: 155px;
+    }
+
+    .card-info{
+        margin-bottom: 1.5rem;
+    }
+
+    .card-numbers > .hours{
+        font-size: 2.8rem;
+        margin-bottom: .4rem;
+    }
+}
+
+@media(max-width: 700px){
+    #content{
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0 .5rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profile-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 120px;
+        width: 250px;
+    }
+
+    #profile-info > img{
+        margin-right: 1rem;  
+    }
+
+    #profile-info > #users-name > p{
+        font-size: 1.2rem;
+    }
+
+    #time-period{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+        margin-bottom: .3rem;
+    }
+
+    .card{
+        width: 250px; 
+        margin-bottom: .2rem;
+    }
+
+    .card-header > img{
+        margin-left: 80%
+    }
+
+    .card-info{
+        margin-bottom: .5rem;
+    }
+
+    .card-numbers{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-numbers > .hours{
+        font-size: 1.5rem;
+    }
+
+    .card-content{
+        height: 90px;
+    }
+
+    footer{
+        margin-bottom: .5rem;
+    }
+}
+
+footer{
+    font-size: 11px;
+    text-align: center;
+    color: hsl(236, 100%, 87%);
+}
+
+footer a{
+    color: hsl(235, 45%, 61%);
+}

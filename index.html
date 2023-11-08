@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time Tracking Dashboard</title>
+</head>
+<body>
+  <main>
+    <div id="content">
+      <div id="profile-card">
+        <div id="profile-info">
+          <img src="images/image-jeremy.png" alt="User Avatar">
+          <div id="users-name">
+            <h1>Report for</h1>
+            <p>Jeremy Robson</p>
+          </div>         
+        </div>
+        <div id="time-period">
+          <p id="daily-info" class="period-choice">Daily</p>
+          <p id="weekly-info" class="period-choice">Weekly</p>
+          <p id="monthly-info" class="period-choice">Monthly</p>
+        </div>            
+      </div>
+      <div id="info-cards">
+        <div class="line-of-cards">
+          <div class="card">
+            <div class="card-header work-header">
+              <img src="images/icon-work.svg" alt="">
+            </div>
+            <div class="card-content">
+              <div class="card-info">
+                <p class="title">Work</p>
+                <img src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="card-numbers">
+                <p id="current-work-hours" class="hours">--</p>
+                <p id="previous-work-hours" class="remain-info"></p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header play-header">
+              <img src="images/icon-play.svg" alt="">
+            </div>
+            <div class="card-content">
+              <div class="card-info">
+                <p class="title">Play</p>
+                <img src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="card-numbers">
+                <p id="current-play-hours" class="hours">--</p>
+                <p id="previous-play-hours" class="remain-info"></p>
+              </div>             
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header study-header">
+              <img src="images/icon-study.svg" alt="">
+            </div>
+            <div class="card-content">
+              <div class="card-info">
+                <p class="title">Study</p>
+                <img src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="card-numbers">
+                <p id="current-study-hours" class="hours">--</p>
+                <p id="previous-study-hours" class="remain-info"></p>
+              </div>             
+            </div>
+          </div>
+        </div>
+        <div class="line-of-cards">
+          <div class="card">
+            <div class="card-header exercise-header">
+              <img src="images/icon-exercise.svg" alt="">
+            </div>
+            <div class="card-content">
+              <div class="card-info">
+                <p class="title">Exercise</p>
+                <img src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="card-numbers">
+                <p id="current-exercise-hours" class="hours">--</p>
+                <p id="previous-exercise-hours" class="remain-info"></p>
+              </div>             
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header social-header">
+              <img src="images/icon-social.svg" alt="">
+            </div>
+            <div class="card-content">
+              <div class="card-info">
+                <p class="title">Social</p>
+                <img src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="card-numbers">
+                <p id="current-social-hours" class="hours">--</p>
+                <p id="previous-social-hours" class="remain-info"></p>
+              </div>             
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header self-care-header">
+              <img src="images/icon-self-care.svg" alt="">
+            </div>
+            <div class="card-content">
+              <div class="card-info">
+                <p class="title">Self Care</p>
+                <img src="images/icon-ellipsis.svg" alt="">
+              </div>
+              <div class="card-numbers">
+                <p id="current-self-care-hours" class="hours">--</p>
+                <p id="previous-self-care-hours" class="remain-info"></p>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </main>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/itsale-o">Alessandra Oliveira</a>.  
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
