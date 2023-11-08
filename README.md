@@ -44,8 +44,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution on Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Live Site with GithubPages](https://your-live-site-url.com)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/time-tracking-dashboard-solution-U495zgJBCz)
+- Live Site URL: [Live Site with GithubPages](https://itsale-o.github.io/time-tracking-dashboard-main/)
 
 ## My process
 
